@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Noori Madrasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---- Header -->
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png"></a> -->
+            <div class="nav-links" id="navLinks">
+                <span class="fa fa-close" onclick="hideMenu()"></span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <!-- <li><a href="about.html">MADRASA</a></li>
+                     -->
+                    <li><a href="blog.html">QAFILA</a></li>
+                    <li><a href="contact.html">TARBIYAT</a></li>
+                    <li><a href="contact.html">WELFARE</a></li>
+                    <li><a href="contact.html">AGENDA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="fa fa-tasks" onclick="showMenu()"></span>
+        </nav>
+
+        <h1 style="font-size: 50px;">Contact Us</h1>
+
+    </section>
+ 
+    <!-- Contact Us-->
+    <section class="location">
+
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.8027661474866!2d72.86939991483011!3d19.03232675828979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf369b49516b%3A0xb4bc0dd47b5f3a87!2sSayyed-E-Aalam%20Masjid!5e1!3m2!1sen!2sin!4v1629655336552!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.73135072510894!2d72.87146694146001!3d19.032865775235923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfbd511cbe45%3A0x682d485ee057d7e2!2sNoori%20Madrasa!5e0!3m2!1sen!2sin!4v1651172483921!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <span class="fa fa-home"></span>
+                    <span>
+                        <h5>
+                            Galli No. 9,Garib Nawaz Nagar,Near Sayyed-e-Alam Masjid
+                        </h5>
+                        <p>Mumbai-400037</p>
+                    </span>
+                </div>
+                <div>
+                    <span class="fa fa-phone"></span>
+                    <span>
+                        <h5>
+                            +91 9821320073
+                        </h5>
+                        <p>Monday to Saturday 8am to 10pm</p>
+                    </span>
+                </div>
+                <div>
+                    <span class="fa fa-envelope-o"></span>
+                    <span>
+                        <h5>
+                            noorimadarasa@gmail.com
+                        </h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formHandler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea placeholder="Message" name="message" rows="8"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <!-- <section class="footer">
+        <h4>About Us</h4>
+        <p>Making website is now one of the easiest thing in the world
+            <br>Making website is now one of the easiest thing in the world
+
+        </p>
+        <div class="icons">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-linkedin"></span>
+
+        </div>
+        <p>Made with <span class="fa fa-heart"></span>  by <span style="font-weight: 900;color: green;">Sohail Usmangani Ustad</span> </p>
+    </section> -->
+
+    <!------- Javascript -->
+    <script>
+        let navLinks=document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+    </script>
+
+</body>
+</html>
